@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'heroSection',
-  title: 'Hero Section',
+  name: 'seoInformation',
+  title: 'SEO Information',
   type: 'document',
   fields: [
     defineField({
@@ -11,15 +11,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'text',
+      name: 'seoTitle',
+      title: 'SEO Title',
+      type: 'string',
     }),
     defineField({
-      name: 'socialLinks',
-      title: 'Social Links',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'socialLink'}}],
+      name: 'seoDescription',
+      title: 'SEO Description',
+      type: 'text',
     }),
   ],
 })

@@ -1,13 +1,13 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'link',
-  title: 'Link',
+  name: 'socialLink',
+  title: 'Social Link',
   type: 'document',
   fields: [
     defineField({
-      type: 'string',
       name: 'socialMedia',
+      type: 'string',
       options: {
         list: [
           {title: 'X', value: 'XIcon'},
