@@ -29,10 +29,9 @@ export default defineType({
               type: 'string',
             }),
             defineField({
-              name: 'video',
-              title: 'Video',
-              type: 'reference',
-              to: [{type: 'videoGallery'}],
+              name: 'url',
+              title: 'url',
+              type: 'string',
             }),
             defineField({
               name: 'path',
